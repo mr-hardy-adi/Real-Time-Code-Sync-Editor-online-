@@ -1,0 +1,115 @@
+/* roomCre.css - GitHub Dark Theme */
+
+.roomCreContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--gh-bg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+  color: var(--gh-text);
+}
+
+.roomCreContainer .mainBox {
+  background-color: var(--gh-card-bg);
+  border: 1px solid var(--gh-border);
+  border-radius: 6px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 8px 24px rgba(1, 4, 9, 0.8);
+}
+
+.roomCreContainer .mainBox .header h1 {
+  margin: 0 0 16px 0;
+  color: var(--gh-text);
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-bottom: 1px solid var(--gh-border);
+  padding-bottom: 12px;
+}
+
+.roomCreContainer .mainBox .actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.roomCreContainer .mainBox .actions label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--gh-text-muted);
+}
+
+.roomCreContainer .mainBox .actions input {
+  background-color: var(--gh-input-bg);
+  border: 1px solid var(--gh-input-border);
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 0.875rem;
+  color: var(--gh-text);
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.roomCreContainer .mainBox .actions input:focus {
+  border-color: var(--gh-input-focus);
+  box-shadow: 0 0 0 3px rgba(47, 129, 247, 0.3);
+}
+
+/* Right-aligned Join Button */
+.roomCreContainer .mainBox .actions button {
+  align-self: flex-end;
+  width: 100%;
+  margin-top: 8px;
+  padding: 6px 16px;
+  background-color: var(--gh-btn-green);
+  color: #ffffff;
+  border: 1px solid rgba(240, 246, 252, 0.1);
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.roomCreContainer .mainBox .actions button:hover {
+  background-color: var(--gh-btn-green-hover);
+}
+
+.roomCreContainer .mainBox .actions button:active {
+  background-color: var(--gh-btn-green-active);
+  transform: scale(0.98);
+}
+
+/* New Generate Section Styles */
+.roomCreContainer .mainBox .generate {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--gh-border);
+  text-align: center;
+}
+
+.roomCreContainer .mainBox .generate p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--gh-text-muted);
+}
+
+.roomCreContainer .mainBox .generate p span {
+  color: var(--gh-link);
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 4px;
+  transition: color 0.15s ease, text-decoration 0.15s ease;
+}
+
+.roomCreContainer .mainBox .generate p span:hover {
+  color: var(--gh-link-hover);
+  text-decoration: underline;
+}
